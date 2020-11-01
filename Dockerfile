@@ -1,5 +1,4 @@
-FROM openjdk:11-jdk-alpine
-VOLUME /tmp
-ARG JAR_FILE
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java", "-jar", "app.jar"]
+FROM openjdk:11
+COPY docker-test.jar docker-test.jar
+EXPOSE 9090
+ENTRYPOINT ["java", "-jar", "docker-test.jar"]
