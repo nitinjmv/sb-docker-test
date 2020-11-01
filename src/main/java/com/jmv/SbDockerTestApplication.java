@@ -21,7 +21,7 @@ class HelloController {
 	
 	@GetMapping
 	public String hello() {
-		return "hello friom docker";
+		return "hello!!! from docker";
 	}
 	
 }
