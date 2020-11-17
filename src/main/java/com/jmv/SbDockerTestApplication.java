@@ -33,5 +33,10 @@ class HelloController {
 	public String hello3() {
 		return "hello3!!! from docker..";
 	}
+
+	@GetMapping("4")
+	public String hello4() {
+		return "hello4!!! from docker..";
+	}
 	
 }
